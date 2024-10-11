@@ -1,0 +1,77 @@
+.webtoon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.webtoon-card {
+    background-color: #e8f4f8; /* Light Blue */
+    border: 1px solid #bcdff1; /* Soft Blue border */
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Start below */
+    animation: fadeInUp 0.5s forwards; /* Animation on load */
+}
+
+.webtoon-card:hover {
+    transform: translateY(-3px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.webtoon-title {
+    font-size: 20px;
+    color: #71082f; /* Deep Blue */
+    margin-bottom: 10px;
+}
+
+.webtoon-image {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+    transition: transform 0.3s ease; /* Add scaling effect */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Start below */
+    animation: fadeInUp 0.5s forwards 0.2s; /* Animation on load with delay */
+}
+
+.webtoon-image:hover {
+    transform: scale(1.03); /* Scale image on hover */
+}
+
+.webtoon-description {
+    font-size: 16px;
+    color: black; /* Dark Gray */
+    margin-top: 10px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Start below */
+    animation: fadeInUp 0.5s forwards 0.4s; /* Animation on load with delay */
+    text-align: center; /* Center-align the description */
+    padding: 0 10px; /* Add some horizontal padding for better spacing */
+    font-family: 'Arial', sans-serif; /* Change font style */
+    line-height: 1.5; /* Improve readability */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Start from below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+.projecttitle {
+    margin-left: 600px;
+    color: #147daa;
+}
+.titlename{
+    color: #147daa;
+    margin-left: 600px;
+}

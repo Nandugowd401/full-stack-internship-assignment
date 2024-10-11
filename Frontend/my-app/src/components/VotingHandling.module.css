@@ -1,0 +1,87 @@
+.container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #F5F5F5; /* Light Gray */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
+    border: 2px solid #B0C4DE; /* Light Steel Blue */
+    transition: box-shadow 0.3s ease; /* Added transition for shadow effect */
+}
+
+.container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.title {
+    font-size: 24px;
+    color: #4B0082; /* Indigo */
+    animation: slideIn 0.5s ease-in-out; /* Slide in effect for title */
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px); /* Slide in from the left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.buttonContainer {
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Added transition for scaling on hover */
+    margin-right: 4px;
+}
+
+.button:nth-child(1) {
+    background-color: #6A5ACD; /* Slate Blue */
+}
+
+.button:nth-child(2) {
+    background-color: #20B2AA; /* Light Sea Green */
+}
+
+.button:hover {
+    opacity: 0.8; /* Slight opacity change on hover */
+    transform: scale(1.1); /* Enlarge button on hover */
+}
+
+.votesContainer {
+    margin-top: 20px;
+}
+
+.voteText {
+    font-size: 18px;
+    color: black; /* Dark Gray */
+    animation: fadeInUp 0.5s ease-in-out; /* Fade and slide up effect for vote text */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px); /* Slide up from below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.boldText {
+    font-weight: bold;
+}
